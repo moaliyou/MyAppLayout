@@ -36,7 +36,6 @@
                 android:text="612839283"
                 android:textSize="28sp"
                 android:layout_weight="8"
-                android:textColor="@color/black"
                 android:textColorHint="#505159"/>
 
             <TextView
@@ -44,10 +43,18 @@
                 android:layout_height="wrap_content"
                 android:text="$200"
                 android:layout_weight="1"
-                android:textColor="@color/black"
                 android:textSize="24sp"/>
 
         </LinearLayout>
+
+        <Button
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Remove"
+            android:layout_marginTop="4dp"
+            android:background="@color/design_default_color_primary"
+            android:textColor="@color/white"/>
+
 
     </LinearLayout>
 
