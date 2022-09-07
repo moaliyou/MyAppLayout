@@ -16,7 +16,6 @@ public class MainActivity extends AppCompatActivity {
 
         Intent intent = getIntent();
         TextView textViewName = findViewById(R.id.textEmail);
-
         textViewName.setText(intent.getStringExtra(StartActivity.EXTRA_MESSAGE));
 
     }
