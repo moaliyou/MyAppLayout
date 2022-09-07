@@ -2,6 +2,7 @@ package com.example.myapplayout;
 
 import androidx.appcompat.app.AppCompatActivity;
 
+import android.content.Intent;
 import android.os.Bundle;
 import android.view.View;
 import android.widget.*;
@@ -13,15 +14,10 @@ public class MainActivity extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.simple_registration);
 
-//        TextView textQuestion = findViewById(R.id.textQuestions);
-//        Button buttonNext = findViewById(R.id.buttonNext);
-//
-//        buttonNext.setOnClickListener(new View.OnClickListener() {
-//            @Override
-//            public void onClick(View v) {
-//                textQuestion.setText("What is the capital city of Somalia?");
-//            }
-//        });
+        Intent intent = getIntent();
+        TextView textViewName = findViewById(R.id.textEmail);
+
+        textViewName.setText(intent.getStringExtra(StartActivity.EXTRA_MESSAGE));
 
     }
 
