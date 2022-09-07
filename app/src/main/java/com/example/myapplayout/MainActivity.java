@@ -15,8 +15,8 @@ public class MainActivity extends AppCompatActivity {
         setContentView(R.layout.simple_registration);
 
         Intent intent = getIntent();
-        TextView textViewName = findViewById(R.id.textFirstName);
-        textViewName.setText(intent.getStringExtra(StartActivity.EXTRA_MESSAGE));
+        TextView tvName = findViewById(R.id.textFirstName);
+        tvName.setText(intent.getStringExtra(StartActivity.EXTRA_MESSAGE));
 
     }
 
