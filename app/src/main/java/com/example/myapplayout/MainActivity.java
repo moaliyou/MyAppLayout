@@ -32,7 +32,6 @@ public class MainActivity extends AppCompatActivity {
         textViewFirstName.setText("First Name: " + editTextFirstName.getText());
         textViewLastName.setText("Last Name: " + editTextLastName.getText());
         textViewEmail.setText("Email: " + editTextEmail.getText());
-
     }
 
 }
